@@ -75,7 +75,7 @@ aws --profile $profile dms create-endpoint \
     --username $db_user_name \
     --password $db_password \
     --server-name $target_server \
-    --extra-connection-attributes='SET FOREIGN_KEY_CHECKS'=0 \
+    --extra-connection-attributes='initstmt=SET FOREIGN_KEY_CHECKS'=0 \
     --port 3306
 
 echo "Waiting for replication instance to be available"
