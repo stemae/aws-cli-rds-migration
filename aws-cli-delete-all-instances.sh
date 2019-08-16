@@ -17,8 +17,8 @@
 
 instance_identifier=$1
 profile=$2
-db_user_name=clinicaldb_root
-db_password='x+Aj6-bloP'
+db_user_name=db_user_name
+db_password=db_password
 replication_instance_id=$instance_identifier"-replication-instance"
 staging_instance_id=$instance_identifier'-staging'
 endpoint_source_id=$instance_identifier'-source-endpoint'
